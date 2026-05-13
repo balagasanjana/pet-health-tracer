@@ -14,17 +14,4 @@ services:
       - key: CORS_ORIGIN
         value: ${FRONTEND_URL}, https://balagasanjana.github.io/pet-health-tracer
 
-  - type: web
-    name: pet-health-tracer-frontend
-    runtime: static
-    plan: free
-    staticPublishPath: ./client/build
-    buildCommand: "cd client && npm install && npm run build"
-    routes:
-      - path: /
-        handlers:
-          - status: 404
-            path: /index.html
-    envVars:
-      - key: REACT_APP_API_URL
-        value: https://pet-health-tracer.onrender.com
+
