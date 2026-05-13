@@ -1,0 +1,30 @@
+services:
+  - type: web
+    name: pet-health-tracer-backend
+    runtime: node
+    plan: free
+    buildCommand: "cd backend && npm install"
+    startCommand: "cd backend && npm start"
+    envVars:
+      - key: MONGO_URI
+        scope: all
+        value: ${MONGO_URI}
+      - key: NODE_ENV
+        value: production
+      - key: CORS_ORIGIN
+        value: ${FRONTEND_URL}
+
+  - type: web
+    name: pet-health-tracer-frontend
+    runtime: static
+    plan: free
+    staticPublishPath: ./build
+    buildCommand: "cd client && npm install && npm run build"
+    routes:
+      - path: /
+        handlers:
+          - status: 404
+            path: /index.html
+    envVars:
+      - key: REACT_APP_API_URL
+        value: ${BACKEND_URL}

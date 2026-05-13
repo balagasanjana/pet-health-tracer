@@ -5,7 +5,18 @@ const authRoutes = require("./routes/auth");
 require("dotenv").config();
 
 const app = express();
-app.use(cors({ origin: "http://localhost:3000" }));
+
+// Environment variables
+const PORT = process.env.PORT || 5000;
+const CORS_ORIGIN = process.env.CORS_ORIGIN || "http://localhost:3000";
+const NODE_ENV = process.env.NODE_ENV || "development";
+
+// CORS Configuration
+app.use(cors({ 
+  origin: CORS_ORIGIN.split(",").map(url => url.trim()),
+  credentials: true 
+}));
+
 app.use(express.json());
 
 // DB Connection
@@ -19,6 +30,11 @@ mongoose
 
 app.use("/api/auth", authRoutes); // ✅ this line expects authRoutes to be a router
 
-app.listen(5000, () => {
-  console.log("Server running at http://localhost:5000");
+// Health check endpoint for Render
+app.get("/health", (req, res) => {
+  res.status(200).json({ status: "OK", environment: NODE_ENV });
+});
+
+app.listen(PORT, () => {
+  console.log(`Server running on port ${PORT} in ${NODE_ENV} mode`);
 });
