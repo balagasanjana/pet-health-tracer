@@ -8,7 +8,7 @@ const app = express();
 
 // Environment variables
 const PORT = process.env.PORT || 5000;
-const CORS_ORIGIN = process.env.CORS_ORIGIN || "http://localhost:3000";
+const CORS_ORIGIN = process.env.CORS_ORIGIN || "https://balagasanjana.github.io/pet-health-tracer";
 const NODE_ENV = process.env.NODE_ENV || "development";
 
 // CORS Configuration

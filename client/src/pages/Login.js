@@ -15,7 +15,7 @@ const Login = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const apiUrl = process.env.REACT_APP_API_URL || "http://localhost:5000";
+      const apiUrl = process.env.REACT_APP_API_URL || "https://pet-health-tracer.onrender.com";
       const res = await axios.post(
         `${apiUrl}/api/auth/login`,
         formData
