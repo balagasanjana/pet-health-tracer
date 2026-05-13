@@ -8,7 +8,7 @@ services:
     envVars:
       - key: MONGO_URI
         scope: all
-        value: ${MONGO_URI}
+        value: mongodb+srv://balagasanjana11:balagasanjana%4011@cluster1.cqvygcp.mongodb.net/pet?appName=Cluster1
       - key: NODE_ENV
         value: production
       - key: CORS_ORIGIN
