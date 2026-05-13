@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/pet-health-tracer/static/css/main.38fd3b06.css",
+    "main.js": "/pet-health-tracer/static/js/main.890d12bb.js",
+    "static/media/hero_img.jpg": "/pet-health-tracer/static/media/hero_img.9cae65f72894429f8e9f.jpg",
+    "index.html": "/pet-health-tracer/index.html",
+    "main.38fd3b06.css.map": "/pet-health-tracer/static/css/main.38fd3b06.css.map",
+    "main.890d12bb.js.map": "/pet-health-tracer/static/js/main.890d12bb.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.38fd3b06.css",
+    "static/js/main.890d12bb.js"
+  ]
+}
