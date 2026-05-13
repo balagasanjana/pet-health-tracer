@@ -1,0 +1,199 @@
+/* home.css */
+
+body {
+  margin: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f7fff7;
+  color: #333;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 40px;
+  background: linear-gradient(90deg, #ffd8a8, #ffe8cc);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+  color: #2f3e46;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  transition: color 0.3s ease-in-out;
+}
+
+.nav-link:hover {
+  color: #2b9348;
+}
+
+.welcome-msg {
+  font-size: 16px;
+  color: #333;
+}
+
+.logout-btn {
+  background-color: #ef476f;
+  color: white;
+  padding: 6px 12px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s ease-in-out;
+}
+
+.logout-btn:hover {
+  background-color: #d62828;
+}
+
+/* Hero Section */
+.hero-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 85vh;
+  background: url("../../public/hero_img.jpg") no-repeat center center/cover;
+  text-align: center;
+  animation: fadeIn 1s ease-in;
+}
+
+.hero-card {
+  background: rgba(255, 255, 255, 0.9);
+  padding: 40px;
+  border-radius: 16px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+  max-width: 600px;
+}
+
+.hero-card h1 {
+  margin-bottom: 20px;
+  font-size: 2rem;
+  color: #2f3e46;
+}
+
+.hero-actions {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+}
+
+.hero-btn {
+  padding: 10px 20px;
+  background-color: #2b9348;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease-in-out;
+}
+
+.hero-btn:hover {
+  background-color: #1e6f3e;
+}
+
+/* Companies Section */
+.companies-section {
+  padding: 60px 20px;
+  text-align: center;
+  background-color: #e9f5db;
+}
+
+.company-animation-wrapper {
+  overflow: hidden;
+  margin-top: 30px;
+}
+
+.company-animation {
+  display: flex;
+  gap: 40px;
+  animation: scrollLeft 15s linear infinite;
+}
+
+.company-card {
+  min-width: 200px;
+  padding: 20px;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  font-weight: bold;
+}
+
+/* Media Section */
+.media-section {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding: 60px 20px;
+  background-color: #fff;
+  gap: 40px;
+}
+
+.media-block h3 {
+  margin-bottom: 10px;
+}
+
+/* Table Section */
+.table-section {
+  padding: 60px 20px;
+  background-color: #f1faee;
+  text-align: center;
+}
+
+.service-table {
+  margin: 0 auto;
+  border-collapse: collapse;
+  width: 80%;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.service-table th,
+.service-table td {
+  padding: 15px 20px;
+  border: 1px solid #ccc;
+}
+
+.service-table th {
+  background-color: #2b9348;
+  color: white;
+}
+
+.service-table td {
+  background-color: #fff;
+}
+
+/* Animations */
+@keyframes scrollLeft {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

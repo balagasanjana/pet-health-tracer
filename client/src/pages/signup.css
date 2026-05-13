@@ -1,0 +1,149 @@
+/* Reset and base styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body,
+html {
+  height: 100%;
+  background-color: #f0fff4;
+}
+
+/* Page container */
+.min-h-screen {
+  min-height: 100vh;
+}
+
+.flex {
+  display: flex;
+}
+
+.items-center {
+  align-items: center;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.px-4 {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.bg-green-50 {
+  background-color: #e6fcf5;
+}
+
+/* Signup card */
+.bg-white {
+  background-color: white;
+}
+
+.p-8 {
+  padding: 2rem;
+}
+
+.rounded-lg {
+  border-radius: 12px;
+}
+
+.shadow-lg {
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.w-full {
+  width: 100%;
+}
+
+.max-w-xl {
+  max-width: 480px;
+}
+
+.text-2xl {
+  font-size: 1.5rem;
+}
+
+.font-bold {
+  font-weight: bold;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-green-600 {
+  color: #38a169;
+}
+
+.mb-6 {
+  margin-bottom: 1.5rem;
+}
+
+/* Form styling */
+form {
+  display: grid;
+  gap: 1rem;
+}
+
+input[type="text"],
+input[type="password"] {
+  padding: 10px 14px;
+  border: 1px solid #cbd5e0;
+  border-radius: 8px;
+  transition: border-color 0.3s ease;
+}
+
+input:focus {
+  outline: none;
+  border-color: #38a169;
+}
+
+label {
+  font-size: 0.9rem;
+  color: #444;
+}
+
+/* Checkbox */
+input[type="checkbox"] {
+  transform: scale(1.2);
+  accent-color: #38a169;
+}
+
+/* Button */
+button {
+  background-color: #38a169;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+  background-color: #2f855a;
+  transform: scale(1.02);
+}
+
+/* Text */
+.text-sm {
+  font-size: 0.875rem;
+}
+
+.text-gray-600 {
+  color: #4a5568;
+}
+
+.text-green-500 {
+  color: #48bb78;
+}
+
+.text-green-500:hover {
+  text-decoration: underline;
+}
