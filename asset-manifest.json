@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "./static/css/main.9b72b430.css",
-    "main.js": "./static/js/main.a7e39400.js",
-    "static/media/hero_img.jpg": "./static/media/hero_img.9cae65f72894429f8e9f.jpg",
-    "index.html": "./index.html",
-    "main.9b72b430.css.map": "./static/css/main.9b72b430.css.map",
-    "main.a7e39400.js.map": "./static/js/main.a7e39400.js.map"
+    "main.css": "/pet-health-tracer/static/css/main.38fd3b06.css",
+    "main.js": "/pet-health-tracer/static/js/main.1999104e.js",
+    "static/media/hero_img.jpg": "/pet-health-tracer/static/media/hero_img.9cae65f72894429f8e9f.jpg",
+    "index.html": "/pet-health-tracer/index.html",
+    "main.38fd3b06.css.map": "/pet-health-tracer/static/css/main.38fd3b06.css.map",
+    "main.1999104e.js.map": "/pet-health-tracer/static/js/main.1999104e.js.map"
   },
   "entrypoints": [
-    "static/css/main.9b72b430.css",
-    "static/js/main.a7e39400.js"
+    "static/css/main.38fd3b06.css",
+    "static/js/main.1999104e.js"
   ]
 }
