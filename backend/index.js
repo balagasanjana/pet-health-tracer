@@ -13,7 +13,7 @@ const NODE_ENV = process.env.NODE_ENV || "development";
 
 // CORS Configuration
 app.use(cors({ 
-  origin: CORS_ORIGIN.split(",").map(url => url.trim()),
+  origin: CORS_ORIGIN.split(",").map(url => url.trim()).filter(url => url !== ""),
   credentials: true 
 }));
 
@@ -32,7 +32,7 @@ app.use("/api/auth", authRoutes); // ✅ this line expects authRoutes to be a ro
 
 // Health check endpoint for Render
 app.get("/health", (req, res) => {
-  res.status(200).json({ status: "OK", environment: NODE_ENV });
+  res.status(200).json({ status: "OK", environment: NODE_ENV, dbState: mongoose.connection.readyState });
 });
 
 app.listen(PORT, () => {

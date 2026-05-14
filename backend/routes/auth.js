@@ -22,6 +22,7 @@ router.post("/signup", async (req, res) => {
     await newUser.save();
     res.status(200).json({ message: "Signup successful" });
   } catch (err) {
+    console.error("Signup error:", err);
     res.status(500).json({ message: "Database error" });
   }
 });
