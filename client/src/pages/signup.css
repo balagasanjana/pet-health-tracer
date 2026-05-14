@@ -38,9 +38,10 @@ html {
   background-color: #e6fcf5;
 }
 
-/* Signup card */
 .bg-white {
   background-color: white;
+  position: relative;
+  z-index: 10;
 }
 
 .p-8 {
@@ -52,7 +53,7 @@ html {
 }
 
 .shadow-lg {
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
 }
 
 .w-full {
