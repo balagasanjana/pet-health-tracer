@@ -5,7 +5,7 @@ const authRoutes = require("./routes/auth");
 require("dotenv").config();
 
 const app = express();
-app.use(cors({ origin: "http://localhost:3000" }));
+app.use(cors({ origin: "https://balagasanjana.github.io" }));
 app.use(express.json());
 
 // DB Connection
@@ -20,5 +20,5 @@ mongoose
 app.use("/api/auth", authRoutes); // ✅ this line expects authRoutes to be a router
 
 app.listen(5000, () => {
-  console.log("Server running at http://localhost:5000");
+  console.log("Server running on port 5000");
 });

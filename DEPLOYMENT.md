@@ -76,7 +76,7 @@ Make sure your backend uses the correct PORT and CORS settings:
 
 ```javascript
 const PORT = process.env.PORT || 5000;
-const CORS_ORIGIN = process.env.CORS_ORIGIN || "http://localhost:3000";
+const CORS_ORIGIN = process.env.CORS_ORIGIN || "https://balagasanjana.github.io/pet-health-tracer";
 
 app.use(cors({ origin: CORS_ORIGIN }));
 
@@ -89,7 +89,7 @@ app.listen(PORT, () => {
 Update your API calls to use the environment variable:
 
 ```javascript
-const API_URL = process.env.REACT_APP_API_URL || "http://localhost:5000";
+const API_URL = process.env.REACT_APP_API_URL || "https://pet-health-tracer.onrender.com";
 
 // In your API calls:
 axios.get(`${API_URL}/api/auth/...`)
@@ -175,7 +175,7 @@ MONGO_URI=your-mongodb-uri npm start
 
 # Frontend (in another terminal)
 cd client
-REACT_APP_API_URL=http://localhost:5000 npm start
+REACT_APP_API_URL=https://pet-health-tracer.onrender.com npm start
 ```
 
 ---
