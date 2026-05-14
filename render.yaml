@@ -12,6 +12,6 @@ services:
       - key: NODE_ENV
         value: production
       - key: CORS_ORIGIN
-        value: ${FRONTEND_URL}, https://balagasanjana.github.io
+        value: "https://balagasanjana.github.io"
 
 
